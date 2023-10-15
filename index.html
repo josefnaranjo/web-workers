@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of primes</title>
+
+    <script type="text/javascript" src="main.js" defer></script>
+    <link href="style.css"rel="stylesheet">
+</head>
+<body>
+    <label for="quota">Number of primes:</label>
+    <input type="text" id="quota" name="quota" value="1000000">
+
+    <button id="generate">Generate primes</button>
+    <button id="reload">Reload</button>
+
+    <textarea id="user-input" rows="5" cols="62">Try typing in here immediately after pressing "Generate primes"</textarea>
+
+    <div id="output"></div>
+</body>
+</html>
+
+
+<!-- This practice code introduces web workers, a mechanism that allows web applications to delegate tasks to separate threads. 
+    Main threads and workers don't share variables directly but communicate through message passing in the form of message events. 
+    While workers help maintain the responsiveness of the main application, it's important to note that they have limitations, such as restricted access to certain APIs, especially the DOM. -->
